@@ -469,6 +469,10 @@ Potential improvements include:
 8. Add human handoff for unresolved or sensitive customer requests.
 9. Evaluate retrieval precision, tool-selection accuracy, and factual consistency.
 10. Improve conversation memory management and session handling.
+11. Optimize local LLM inference, embedding generation, and vector retrieval performance through hardware acceleration (GPU offloading).
+
+---
+
 
 ---
 
@@ -510,5 +514,11 @@ This project demonstrates a practical hybrid AI customer support architecture co
 
 The central architectural principle is to use the LLM for language understanding, reasoning, and response generation while delegating factual retrieval and business data access to specialized, verifiable components.
 
-**The result is a modular, locally runnable AI customer support assistant designed to provide natural, context-aware, and evidence-grounded responses.**
+## AI-Assisted Development
+
+AI tools were used to support code suggestions, debugging, architecture guidance, and documentation. All suggestions were reviewed, adapted, and tested. Final implementation decisions and validation remained the developer's responsibility.
+
+## Chatbot Interaction Examples
+
+
 
