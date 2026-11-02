@@ -40,7 +40,7 @@ A locally hosted Large Language Model acts as the reasoning and response-generat
 The application follows a modular architecture in which the agent coordinates the interaction between the language model and the available tools.
 
 
-![Arquitectura del Agente IA](images/architecture_flowchart.jpg)
+![Arquitectura del Agente IA](images/architecture_flowchart.jpeg)
 
 ### 2.1 Agentic Tool Use
 
