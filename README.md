@@ -39,74 +39,8 @@ A locally hosted Large Language Model acts as the reasoning and response-generat
 
 The application follows a modular architecture in which the agent coordinates the interaction between the language model and the available tools.
 
-```text
-                         CUSTOMER
-                            |
-                            v
-                  +-------------------+
-                  |   Streamlit UI    |
-                  |   Chat Interface  |
-                  +-------------------+
-                            |
-                            v
-                  +-------------------+
-                  |  Agent Orchestrator|
-                  |      LangGraph    |
-                  |    ReAct Agent    |
-                  +-------------------+
-                            |
-                            v
-                  +-------------------+
-                  |    Local LLM      |
-                  | Qwen2.5 7B Instruct|
-                  |      Ollama       |
-                  +-------------------+
-                            |
-                     Tool Selection
-                            |
-              +-------------+-------------+
-              |                           |
-              v                           v
-    +---------------------+     +----------------------+
-    | Operational Tools   |     | Policy RAG Tools     |
-    +---------------------+     +----------------------+
-              |                           |
-              v                           v
-    +---------------------+     +----------------------+
-    | CSV Repository      |     | PDF Document Loader  |
-    | Pandas              |     | Text Chunking        |
-    +---------------------+     +----------------------+
-              |                           |
-              v                           v
-    +---------------------+     +----------------------+
-    | Operational CSVs    |     | Embedding Model      |
-    |                     |     | Sentence Transformers|
-    | Products            |     +----------------------+
-    | Categories          |                |
-    | Customers           |                v
-    | Orders              |     +----------------------+
-    | Order Items         |     | ChromaDB             |
-    | Promotions          |     | Vector Database      |
-    +---------------------+     +----------------------+
-              |                           |
-              +-------------+-------------+
-                            |
-                            v
-                  +-------------------+
-                  |  Context-Grounded |
-                  |  Response         |
-                  +-------------------+
-                            |
-                            v
-                  +-------------------+
-                  |  SQLite           |
-                  |  Conversation     |
-                  |  Persistence      |
-                  +-------------------+
-                            |
-                            v
-                         CUSTOMER
-```
+
+![Arquitectura del Agente IA](images/architecture_flowchart.jpg)
 
 ### 2.1 Agentic Tool Use
 
