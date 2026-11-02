@@ -520,5 +520,8 @@ AI tools were used to support code suggestions, debugging, architecture guidance
 
 ## Chatbot Interaction Examples
 
+![Chatbot example 1](images/1.png)
+![Chatbot example 2](images/2.png)
+
 
 
